@@ -1,0 +1,14 @@
+{% extends '_layouts/detail-entry.njk' %}
+
+{% set entry = data.entries[2] %}
+
+{% block page_title %}Blog entry title{% endblock %}
+
+{% block description %}Blog entry for {{ entry.date }}, {{ entry.title }}{% endblock %}
+
+{% block story %}
+  <img src="img/kraken03.jpg" class="img-fluid" alt="Responsive image">
+  <h1>{{ entry.title}}</h1>
+  <h5>Captain's log: {{ entry.date }}</h5>
+  <p>Trysail Sail ho Corsair red ensign hulk smartly boom jib rum gangway. Case shot Shiver me timbers gangplank crack Jennys tea cup ballast Blimey lee snow crow's nest rutters. Fluke jib scourge of the seven seas boatswain schooner gaff booty Jack Tar transom spirits.</p>
+{% endblock %}
